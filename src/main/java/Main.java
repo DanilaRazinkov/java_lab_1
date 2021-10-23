@@ -7,9 +7,9 @@ public class Main {
         MyCollection<Integer> collection = new MyCollection<>();//Для демонстрации функционала создается коллекция определенного типа
         char mot;
         do{
-            System.out.println("Коллекция(int): " + collection);
             System.out.println("Выберите действие: \n1 - Добавить элемент \n2 - Добавить элемент на позицию i" +
                     "\n3 - получить элемент на позиции i\n4 - удалить элемент\ne - выход");
+            System.out.println("Коллекция(int): " + collection);
             mot = in.next().charAt(0);
             try{
             switch (mot) {
@@ -40,7 +40,6 @@ public class Main {
             }catch (IndexOutOfBoundsException e) {
                 System.out.println("Индекс выходит за границы коллекции");
             }
-
         } while(mot != 'e');
     }
 }
